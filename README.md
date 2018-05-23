@@ -33,4 +33,4 @@
     vdom.mount(document.querySelector('#app'), new App())
 
 ## TodoMVC Demo
-<http://linlifengx.github.io/demos/simple-vdom-todo-mvc/index.html>
+<https://linlifengx.github.io/demos/simple-vdom-todo-mvc/index.html>
