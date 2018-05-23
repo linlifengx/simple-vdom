@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript" src="./simple-vdom.js"></script>
+        <script>
+            const Component = vdom.Component
+            const h = vdom.h
+
+            class App extends Component {
+                constructor () {
+                    super()
+
+                    this.state = {
+                        value: ''
+                    }
+
+                    this.onInput = (event) => {
+                        this.setState({
+                            value: event.target.value
+                        })
+                    }
+                }
+
+                render () {
+                    return h('div', null, [
+                        h('input', {value: this.state.value, onInput:this.onInput}),
+                        h('div', null, this.state.value)
+                    ])
+                }
+            }
+
+            vdom.mount(document.querySelector('#app'), new App())
+        </script>
+    </body>
+</html>
