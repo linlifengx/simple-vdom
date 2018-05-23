@@ -1,9 +1,9 @@
-#simple-vdom
+# simple-vdom
 一个简单的virtual-dom实现，只有不到500行，支持类似react的自定义组件功能。
 
 ---------------------------------------------------
 
-##简单的例子
+## 简单的例子
     const Component = vdom.Component
     const h = vdom.h
 
